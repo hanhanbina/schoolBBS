@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Alimmfont';
+    src:url('./AlimamaDongFangDaKai-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Zhengwenfont';
+    src: url('./AlimamaFangYuanTiVF-Thin.ttf') format('truetype');
+}
+.Alimmfont{
+    font-family: 'Alimmfont' !important;
+    font-weight: 100 !important;
+}
+.ChinaAndEnglishFont{
+    font-family: 'Zhengwenfont' !important;
+    font-weight: 500 !important;
+}

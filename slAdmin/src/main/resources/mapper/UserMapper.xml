@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xu.sladmin.mapper.UserMapper">
+
+    <select id="findMyreplyByUserId" resultType="com.xu.sladmin.entity.ReplyPost">
+        select rp.*,p.title
+        from reply_post rp
+            JOIN post p
+                on p.post_id=rp.post_id
+        where rp.user_id = #{id}
+        Order by rp.reply_id
+    </select>
+</mapper>
